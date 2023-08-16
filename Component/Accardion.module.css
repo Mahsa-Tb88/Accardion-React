@@ -1,0 +1,28 @@
+.accardion_item {
+  border: 1px solid #f1f5f9;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  text-align: left;
+  padding: 0 15px;
+}
+.accardion_item_content {
+  max-height: 0;
+  /* opacity: 0; */
+  transition: all 0.5s ease-out;
+  overflow: hidden;
+  font-size: 13px;
+  line-height: 1.6rem;
+}
+.accardion_item.accardion_expand .accardion_item_content {
+  /* opacity: 1; */
+  max-height: 100vh;
+  transition: all 0.5s ease-out;
+}
+
+.accardion_item_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
